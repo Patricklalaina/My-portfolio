@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Changé de space-between à flex-start */
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #c9d1d9;
+    background: url("../assets/background.png") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #0d1117;
+    min-height: 100vh; /* Assure que le body prend toute la hauteur de l'écran */
+}
+
+.top-bar {
+    position: sticky;
+    top: 0;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #30363d;
+    background-color: #161b22;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 20px;
+    opacity: 70%;
+    z-index: 100; /* Assure que la top-bar reste au-dessus */
+}
+
+.top-bar .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.top-bar .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.btn-grp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-grp > *{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.btn-grp > *:hover {
+    color: #5aff75;
+}
+
+/* Nouveau CSS pour le content */
+.content {
+    flex: 1;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS corrigé pour la homePage */
+.content .homePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    text-align: center;
+    opacity: 70%;
+}
+
+/* Styles pour les éléments de la homePage */
+.homePage .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background-color: rgba(48, 54, 61, 0.1);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.homePage #background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.homePage #photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    object-fit: cover;
+}
+
+.homePage .name {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.homePage .name #big-green{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5aff75;
+}
+
+.homePage .presentation {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    max-width: 600px;
+}
+
+.homePage a {
+    color: #5aff75;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #5aff75;
+    background-color: #111111;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.homePage a i {
+    margin-right: 10px;
+}
+.homePage a:hover {
+    background-color: #111111;
+    color: #c9cdd3;
+}
