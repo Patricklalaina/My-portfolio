@@ -61,6 +61,30 @@ function showContact(){
     }
 }
 
+const citation = document.querySelector('.presentation');
+let presentation = citation.innerText;
+let fragPresentation = presentation.split(' ');
+let count = 1;
+let complet = fragPresentation[0];
+citation.innerText = complet;
+
+
+function display_frag_text() {
+            if (count > fragPresentation.length){
+                count = 1;
+                complet = fragPresentation[0];
+            }
+            else {
+                complet = fragPresentation.slice(0, count).join(' ');
+                count++;
+            }
+            citation.innerHTML = complet;
+			setTimeout(() => {
+				display_frag_text();
+			}, 700);
+}
+
+display_frag_text();
 home.addEventListener('click', showHome);
 about.addEventListener('click', showAbout);
 Project.addEventListener('click', showProject);
