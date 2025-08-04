@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/font/css/fontawesome.min.css">
-    <link rel="stylesheet" href="styles/font/css/brands.min.css"> <!-- For brand icons -->
-    <link rel="stylesheet" href="styles/font/css/solid.min.css"> <!-- For solid icons -->
-    <title>Patrick Randriamanambola</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/font/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="styles/fontawesome/css/all.min.css">
+	<title>Accueil</title>
 </head>
 <body>
-    <div class="top-bar">
-        <div class="logo">
-            <img src="https://cdn.intra.42.fr/users/983aff976be8fc5d317cf33f79c540d7/fidrandr.jpg" alt="" class="profil">
-        </div>
-        <div class="btn-grp">
-            <div class="home"></div>
-            <div class="about"></div>
-            <div class="projects"></div>
-            <div class="contact"></div>
-        </div>
-    </div>
-    <div class="content">
-        <div class="homePage">
-            <img src="https://cdn.intra.42.fr/users/983aff976be8fc5d317cf33f79c540d7/fidrandr.jpg" alt="" id="photo">
-            <div class="profile">
-                <p class="name"><span id="big-green">&lt; </span> Patrick RANDRIAMANAMBOLA<span id="big-green"> /&gt;<span></span></p>
-                <p class="presentation">Hi!👋🏼 I'm Game, Web and Desktop Developer 🧑🏼‍💻</p>
-                <p>
-                    <a href="#"><i class="fa-brands fa-github"></i>Github</a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"> </i>Linkedin</a>
-                </p>
-            </div>
-        </div>
-        <div class="aboutPage">I'm about Page</div>
-        <div class="projectsPage">I'm projects Page</div>
-        <div class="contactPage">I'm contact Page</div>
-    </div>
-    <script src="script/scripts.js"></script>
+	<div class="show">
+		<i class="fa-solid fa-o"></i>
+	</div>
+	<div class="navbar">
+		<div class="home" title="Accueil"><i class="fa fa-house"></i></div>
+		<div class="about" title="A propos de moi"><i class="fa fa-user"></i></div>
+		<div class="project" title="Mes Projets"><i class="fa-solid fa-file-code"></i></div>
+		<div class="contact" title="Me contacter ?"><i class="fa fa-phone"></i></div>
+	</div>
+	<div class="content">
+		<div class="homeContainer">
+			<div class="photo">
+				<img src="assets/image.png" alt="profile" id="profile">
+			</div>
+			<div class="bio">
+				<h1>Patrick Randriamanambola</h1>
+				<div class="description">
+					<div class="line"></div>
+					<div class="paragraph">
+						<div><i class="fa-solid fa-desktop"></i> Developpement logiciel</div>
+						<div><i class="fa-solid fa-gamepad"></i> Developpement Jeux videos</div>
+						<div><i class="fa-solid fa-globe"></i> Developpement Web</div>
+						<div><i class="fa-solid fa-chart-area"></i> Data Analysis</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Here content -->
+	</div>
+	<script type="module" src="script/script.js"></script>
 </body>
 </html>
